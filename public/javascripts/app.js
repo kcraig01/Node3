@@ -5,7 +5,9 @@ $(function(){
 //if success - return data.success
 $('#testform').submit(function(e){
 	e.preventDefault();
+	$('#loader').addClass('pulse')
 	$.post('/signup', $(this).serialize(),function(data){
+		$('#loader').removeClass('pulse');
 		if(data.error){
 			$('#message').text(data.error)
 		}

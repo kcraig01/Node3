@@ -6,3 +6,16 @@ body {
 a {
   color: #00B7FF;
 }
+
+body{
+	background:papayawhip;
+}
+
+@-webkit-keyframes pulse{
+	  0%   { -webkit-transform:rotate(0deg); background:blue;}
+	  100% { -webkit-transform:rotate(1080deg); background:green;}
+;}
+
+	.pulse {
+		-webkit-animation:pulse 1s infinite;
+	}
